@@ -1,0 +1,13 @@
+*** Settings ***
+Library    SeleniumLibrary
+
+*** Variables ***
+${URL}                    http://localhost:3000/
+
+*** Keywords ***
+
+Dado que eu acesse o organo
+     Open Browser    url=${URL}    browser=Chrome
+
+Fechar navegador
+     Close Browser
